@@ -21,9 +21,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: dev
-          secrets: |
-            GIT_AUTH_TOKEN=${{ secrets.GITHUB_TOKEN }}
+          tags: ghcr.io/silversky9/bookinfo-ratings:dev
 
       # - run: docker build -t ghcr.io/silversky9/bookinfo-ratings:dev .
       # - run: echo ${{ secrets.GITHUB_TOKEN }} | docker login ghcr.io -u ${{ github.actor }} --password-stdin
