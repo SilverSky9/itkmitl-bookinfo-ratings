@@ -49,5 +49,5 @@ jobs:
   test:
     steps:
       - name : grep
-        run: curl http://itkmitl.bookinfo.dev.opsta.net/student25/ratings/health | grep "Ratings is working"  
+        runs-on: curl http://itkmitl.bookinfo.dev.opsta.net/student25/ratings/health | grep "Ratings is working"  
 
