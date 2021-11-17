@@ -46,6 +46,8 @@ jobs:
                 "COMMIT_SHA": "${{ github.sha }}"
               }
             }
-      # - run: docker build -t ghcr.io/silversky9/bookinfo-ratings:dev .
-      # - run: echo ${{ secrets.GITHUB_TOKEN }} | docker login ghcr.io -u ${{ github.actor }} --password-stdin
-      # - run: docker push ghcr.io/silversky9/bookinfo-ratings:dev
+  test:
+    steps:
+      - name : grep
+        run: curl http://itkmitl.bookinfo.dev.opsta.net/student25/ratings/health | grep "Ratings is working"  
+
