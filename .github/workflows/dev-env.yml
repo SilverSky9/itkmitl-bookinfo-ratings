@@ -50,5 +50,5 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name : curl 
-        run: curl http://itkmitl.bookinfo.dev.opsta.net/student25/ratings/health | grep "Ratings is good"  
+        run: curl http://itkmitl.bookinfo.dev.opsta.net/student25/ratings/health | grep "Ratings is Working"  
 
